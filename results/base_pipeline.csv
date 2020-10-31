@@ -1,0 +1,5 @@
+	Name	Train	Test	accuracy	majority_House	majority_Senate
+0	114	House	Senate	89.79591836734694	56.8 - R	54 - R
+1	114	Senate	House	81.85941043083899	56.8 - R	54 - R
+2	114	House	House	88.7218045112782	56.8 - R	54 - R
+3	114	Senate	Senate	86.66666666666667	56.8 - R	54 - R
