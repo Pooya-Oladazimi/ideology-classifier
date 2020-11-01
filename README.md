@@ -3,6 +3,17 @@ I implemented this python project for a seminar paper and [a talk](https://west.
 on their speeches content. The goal was to understand the challenges in 
 interpreting the outcome of ideology classification in political science.  
 
+### Key findings 
+- US House is not more partsian than the senate. However, it is better for training since it has more members than the Senate. 
+- Partisanship is increasing in between US major parties in Congress
+- Ideology is Not the only factor which shapes speeches, Political party position (incumbent/challenger) also affects it. 
+
+
+### Methodology
+- Classification: Support Vector Machine (SVM)
+- Vectorization: TF-IDF 
+- Text representation: Bag-of-Words 
+
 
 ### Compatibility 
 Python 3.6
