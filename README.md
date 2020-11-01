@@ -30,13 +30,13 @@ Python 3.6
   - **n_SpeakerMap.txt**: n is the congress ID.
   - **speeches_n.txt**: n is the congress ID.
 
-**temp**: needed for data cleaning
+- **temp**: needed for data cleaning
 
-**results**: contains the final outcome.
+- **results**: contains the final outcome.
 
-**states.txt**: contains US states name, used for cleaning
+- **states.txt**: contains US states name, used for cleaning
 
-**congress_metadata**: contains each congress chamber majority baseline. Format has to be like  "chamber,congress_ID,percentage,party", For example, "house,109,53,R". This means in 109th congress, Republicans had the majority in house chamber with 53 percents:
+- **congress_metadata**: contains each congress chamber majority baseline. Format has to be like  "chamber,congress_ID,percentage,party", For example, "house,109,53,R". This means in 109th congress, Republicans had the majority in house chamber with 53 percents:
   - **chamber**: house or senate
   - **congress_ID**: congress term number
   - **percentage**: majority baseline
@@ -44,8 +44,19 @@ Python 3.6
   
   
 ### Results structure 
+The results will be in *results/base_pipeline.csv*. It contains four runs for the target congress:
+- **House to Senate**: Train on house, Test on senate
+- **Senate to House**: Train on senate, Test on house
+- **House to House**: Train on house, Test on house
+- **Senate to Senate**: Train on senate, Test on senate
 
-
+### Data cleaning
+- remove stop words
+- remove non-alpha words
+- lemmatization
+- remove terms with low (< 4) and high (> 50) term frequency.
+- remove people (congress members) names
+- remove states name
 
 
 
