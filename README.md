@@ -34,6 +34,21 @@ Python 3.6
 
 **results**: contains the final outcome.
 
+**states.txt**: contains US states name, used for cleaning
+
+**congress_metadata**: contains each congress chamber majority baseline. Format has to be like  "chamber,congress_ID,percentage,party", For example, "house,109,53,R". This means in 109th congress, Republicans had the majority in house chamber with 53 percents:
+  - **chamber**: house or senate
+  - **congress_ID**: congress term number
+  - **percentage**: majority baseline
+  - **party**: R (Republicans) , D (Democrats)
+  
+  
+### Results structure 
+
+
+
+
+
 
 
   
